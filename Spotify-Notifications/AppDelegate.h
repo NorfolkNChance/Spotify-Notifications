@@ -26,6 +26,9 @@
 @property (strong, nonatomic) IBOutlet NSMenuItem *openLastFMMenu;
 @property (strong, nonatomic) IBOutlet NSMenuItem *openPreferences;
 @property (strong, nonatomic) IBOutlet NSMenuItem *currentSongMenuItem;
+@property (strong, nonatomic) IBOutlet NSMenuItem *nextTrackMenuItem;
+@property (strong, nonatomic) IBOutlet NSMenuItem *previousTrackMenuItem;
+@property (strong, nonatomic) IBOutlet NSMenuItem *playPauseMenuItem;
 
 //Preferences
 @property (assign) IBOutlet NSWindow *prefsWindow;

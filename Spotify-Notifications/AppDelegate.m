@@ -83,6 +83,18 @@
     [spotify activate];
 }
 
+- (IBAction)nextTrack:(NSMenuItem*)sender {
+    [spotify nextTrack];
+}
+
+- (IBAction)previousTrack:(NSMenuItem*)sender {
+    [spotify previousTrack];
+}
+
+- (IBAction)playPause:(NSMenuItem*)sender {
+    [spotify playpause];
+}
+
 - (IBAction)showLastFM:(NSMenuItem*)sender {
     
     //Artist - we always need at least this
@@ -109,6 +121,8 @@
         
     } else if (actionType == NSUserNotificationActivationTypeActionButtonClicked && spotify.playerState == SpotifyEPlSPlaying) {
         [spotify nextTrack];
+//    } else if (actionType == NSUserNotificationActivationTypeActionButtonClicked && spotify.playerState == SpotifyEPlSPlaying) {
+//        [spotify previousTrack];
     }
 }
 
